@@ -19,6 +19,7 @@ gem 'csl-styles'
 gem 'devise'
 gem 'devise-guests', '~> 0.6'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'font-awesome-rails'
 gem 'honeybadger', '~> 4.0'
 gem 'iso-639'
 gem 'jbuilder', '~> 2.7'

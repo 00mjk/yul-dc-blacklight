@@ -76,7 +76,11 @@ a {
 }
 
 .remove::before {
-  content: url(x2x.png);
+  font-family: FontAwesome;
+  content: "\f057";
+  font-weight: 900;
+  font-size: 16px;
+  color: $medium_grey;
 }
 
 .text-success, .facet-values li .selected {
