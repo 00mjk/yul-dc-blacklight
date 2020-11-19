@@ -203,7 +203,7 @@ RSpec.describe 'Search the catalog using advanced search', type: :system, js: tr
 
     it 'can sort by creator' do
       within '#sort' do
-        find("option[value='creator_ssim asc, title_ssim asc']").click
+        find("option[value='creator_ssim asc, title_ssim asc, oid_ssi desc']").click
       end
 
       click_on 'SEARCH'
