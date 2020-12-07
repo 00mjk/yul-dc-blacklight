@@ -23,6 +23,7 @@ module CheckAuthorization
       true
     when 'Yale Community Only'
       return true if current_user || User.on_campus?(request.remote_ip)
+
       render json: { error: 'unauthorized' }.to_json, status: 401
       false
     end

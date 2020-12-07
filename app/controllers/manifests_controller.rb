@@ -2,8 +2,8 @@
 
 # Takes a request for a manifest/oid and stream the JSON for that oid from S3
 class ManifestsController < ApplicationController
-  include Blacklight::Catalog
   include CheckAuthorization
+  include Blacklight::Catalog
 
   def show
     remote_path = pairtree_path
