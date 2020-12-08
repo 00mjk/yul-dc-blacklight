@@ -83,4 +83,8 @@ RSpec.describe 'Show Page', type: :system, js: true, clean: true do
       expect(page).to have_link("Start Over", href: "/catalog")
     end
   end
+
+  it "has a UV partial" do
+    expect(page).to have_css ".uv-container"
+  end
 end
